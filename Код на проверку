@@ -1,0 +1,9 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = int(input("Введите сумму депозита:"))
+print("Сумма вашего депозита в рублях:", money)
+deposit = []
+for key in per_cent:
+    deposit.append(int(per_cent[key] * money / 100))
+print("Проценты по вкладам в банках ТКБ, СКБ, ВТБ, СБЕР составят: ", deposit)
+max_deposit = max(deposit)
+print("Максимальная сумма по вкладу, которую вы можете полуить: ", max_deposit)
